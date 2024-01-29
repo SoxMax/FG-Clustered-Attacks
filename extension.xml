@@ -17,6 +17,12 @@
 	<announcement text="Clustered Attacks v0.1.0 \r Adds the ability to group multiple damage sources into one damage application" font="emotefont" />
 
 	<base>
+		<!-- Strings -->
+		<includefile source="strings/strings_clustered_attacks.xml" />
+
+		<!-- Windows -->
+		<includefile source="windows/cluster_attacks.xml" />
+
 		<!-- Libraries -->
 		<script name="ClusteredAttacksManager" file="scripts/manager_clustered_attacks.lua" />
 		

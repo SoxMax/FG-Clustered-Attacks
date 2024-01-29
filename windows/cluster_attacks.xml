@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<root>
+    <windowclass name="cluster_attacks">
+        <!-- <frame name="border" /> -->
+        <script file="windows/scripts/cluster_attacks.lua" />
+		<frame>utilitybox</frame>
+        <sizelimits>
+            <minimum width="350" height="350" />
+            <dynamic />
+        </sizelimits>
+        <playercontrol />
+        <sheetdata>
+            <windowtitlebar_utilitybox name="title" />
+			<windowmenubar_utilitybox />
+            <resize_utilitybox />
+
+			<anchor_content_utilitybox_top />
+			<anchor_content_utilitybox_bottom />
+
+            <stringc_content_framed_groupbox name="text" />
+
+            <label name="target">
+                <frame name="border" />
+                <anchored to="text" position="insidetop" offset="0,10" />
+                <static text="Target" />
+            </label>
+        </sheetdata>
+    </windowclass>
+</root>
