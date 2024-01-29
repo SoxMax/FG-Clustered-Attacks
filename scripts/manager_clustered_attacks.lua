@@ -64,6 +64,15 @@ function applyModifierKeysToModRollIntercept(rRoll, rSource, rTarget)
 	end
 end
 
+function onDamageClusteredModifier(key)
+    if ModifierManager.getRawKey(key) then
+        ModifierManager.lock()
+    else
+        ModifierManager.unlock()
+        notifyApplyClusteredDamage()
+    end
+end
+
 function clusterDamage(sCommand, sParams)
     Interface.openWindow("cluster_attacks", "")
 end
@@ -76,8 +85,8 @@ function onInit()
     ActionDamage.applyModifierKeysToModRoll = applyModifierKeysToModRollIntercept
 
     ModifierManager.addModWindowPresetButton("damage", "DMG_CLUSTERED")
+    ModifierManager.registerKeyCallback("DMG_CLUSTERED", onDamageClusteredModifier)
 
     Comm.registerSlashHandler("clusterdamage", clusterDamage)
     Comm.registerSlashHandler("clusterattacks", clusterDamage)
-    Comm.registerSlashHandler("applyClusteredAttacks", notifyApplyClusteredDamage)
 end

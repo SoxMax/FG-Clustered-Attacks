@@ -1,7 +1,6 @@
 local damageTarget
 
 function addDamageInstance(draginfo)
-    Debug.chat(draginfo)
     CombatDropManager.handleAnyDrop(draginfo, damageTarget.getPath())
 end
 
