@@ -47,7 +47,6 @@ function notifyApplyClusteredDamage()
                 rSource = damageInstance.rSource
                 rTarget = damageInstance.rTarget
                 bSecret = damageInstance.bSecret
-                Debug.chat(damageInstance.sDesc)
                 sDesc = sDesc .. " " .. damageInstance.sDesc
                 nTotal = nTotal + damageInstance.nTotal
                 extraArgs = damageInstance.extraArgs
