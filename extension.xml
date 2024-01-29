@@ -2,7 +2,7 @@
 <root version="3.3">
 	<properties>
 		<name>Feature: Clustered Attacks</name>
-		<version>0.1.0</version>
+		<version>1.0.0</version>
 		<author>SoxMax</author>
 		<description>Adds the ability to group multiple damage sources into one damage application</description>
 		<loadorder>100</loadorder>
@@ -14,7 +14,7 @@
 		</ruleset>
 	</properties>
 
-	<announcement text="Clustered Attacks v0.1.0 \r Adds the ability to group multiple damage sources into one damage application" font="emotefont" />
+	<announcement text="https://forge.fantasygrounds.com/shop/items/1568/view \r Clustered Attacks v1.0.0 \r Adds the ability to group multiple damage sources into one damage application" font="emotefont" />
 
 	<base>
 		<!-- Strings -->
