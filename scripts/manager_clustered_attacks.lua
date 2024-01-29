@@ -87,6 +87,6 @@ function onInit()
     ModifierManager.addModWindowPresetButton("damage", "DMG_CLUSTERED")
     ModifierManager.registerKeyCallback("DMG_CLUSTERED", onDamageClusteredModifier)
 
-    Comm.registerSlashHandler("clusterdamage", clusterDamage)
-    Comm.registerSlashHandler("clusterattacks", clusterDamage)
+    -- Comm.registerSlashHandler("clusterdamage", clusterDamage)
+    -- Comm.registerSlashHandler("clusterattacks", clusterDamage)
 end
